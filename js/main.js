@@ -76,6 +76,10 @@ document.onkeydown = function (e) {
   if (!car) return;
 
   // TODO
+  switch (e.keyCode) {
+    case 37: car.moveLeft();  console.log('left',  car); break;
+    case 39: car.moveRight(); console.log('right', car); break;
+  }
 }
 
 let raf;

@@ -22,8 +22,11 @@ class Car {
 
   moveLeft() {
     // TODO
+    this.x -=35;
   }
+
   moveRight() {
     // TODO
+    this.x +=35;
   }
 }
