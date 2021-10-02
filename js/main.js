@@ -10,12 +10,15 @@ const H = ctx.canvas.height;
 
 function draw() {
   //
+  // toutes les 16ms
+  //
+
+  //
   // Iteration 1: road drawing
   //
 
   // TODO
-  const startButton = document.querySelector('#start-button');
-  startButton.addEventListener('click', function () {
+
   ctx.clearRect(0, 0, W, H)
     ///Largest square (green)
   ctx.fillStyle = `green`;
@@ -41,13 +44,13 @@ function draw() {
   ctx.moveTo(500, 0);
   ctx.lineTo(500, H);
   ctx.stroke();
-  }); 
 
   //
   // Iteration 2: car drawing
   //
 
   // TODO
+  car.draw();
 
   //
   // Iteration #4: obstacles
@@ -93,6 +96,8 @@ function startGame() {
   }
 
   // TODO
+  car = new Car();
+
 
   animLoop();
 }
